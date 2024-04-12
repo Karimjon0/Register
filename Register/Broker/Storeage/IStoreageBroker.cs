@@ -1,15 +1,12 @@
-﻿using Register.Models;
+using Register.Models;
 
 namespace Book.CRUD.Broker.Storeage
 {
     interface IStoreageBroker
     {
-        Registers ReadBook(string password);
-        Registers[] GetAllBook();
-        Registers AddBook(Registers name);
+        Registers ReadName(string password);
         Registers AddName(Registers name);
-        Registers[] GetAllName();
-        Registers ReadBook(int password);
         Registers ReadName(int password);
+        Registers[] GetAllName();
     }
 }
