@@ -1,4 +1,4 @@
-﻿using Register.Models;
+using Register.Models;
 
 namespace Book.CRUD.Broker.Storeage
 {
@@ -10,8 +10,7 @@ namespace Book.CRUD.Broker.Storeage
         {
             RegistersInfo[0] = new Registers()
             {
-                FirstName = "Karimjon",
-                LastName = "Abidjonov",
+                UserName = "Abidjonov Karimjon",
                 Password = "Password",
             };
         }
@@ -38,8 +37,7 @@ namespace Book.CRUD.Broker.Storeage
                 {
                     var RegistersInfo = new Registers()
                     {
-                        FirstName = name.FirstName,
-                        LastName = name.LastName,
+                        UserName = name.UserName,
                         Password = name.Password,
                     };
                     this.RegistersInfo[itaration] = RegistersInfo;
@@ -47,31 +45,6 @@ namespace Book.CRUD.Broker.Storeage
                 }
             }
             return new Registers();
-        }
-
-        public Registers ReadBook(string password)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Registers[] GetAllBook()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Registers AddBook(Registers name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Registers ReadBook(int password)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Registers ReadName(int password)
-        {
-            throw new NotImplementedException();
         }
     }
 
